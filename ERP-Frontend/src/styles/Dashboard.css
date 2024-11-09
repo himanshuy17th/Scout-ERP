@@ -1,0 +1,212 @@
+/* src/styles/Dashboard.css */
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%; /* For Safari */
+    text-size-adjust: 100%;         /* For other browsers */
+}
+
+/* Login Page Styling */
+.login-page {
+    background-color: #ffc0cb; /* Light pink */
+    padding: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-page h1 {
+    color: #d6336c; /* Darker pink for the login title */
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.login-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-box button {
+    background-color: #d6336c;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-box button:hover {
+    background-color: #c2185b;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+    background-color: #f0e68c; /* Light Khaki */
+}
+
+.sales-dashboard {
+    background-color: #e6f7ff; /* Light Blue */
+}
+
+.labour-dashboard {
+    background-color: #e0ffe0; /* Light Green */
+}
+
+.hr-dashboard {
+    background-color: #ffe6e6; /* Light Coral */
+}
+
+/* Dashboard Header */
+.dashboard-container h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Section Headings */
+.dashboard-section h4 {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.btn-secondary {
+    background-color: #2ecc71;
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+.btn-info {
+    background-color: #8e44ad;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+/* Lists */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 8px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+ul li:hover {
+    background-color: #f0f0f0; /* Lighten on hover */
+    transform: translateX(5px); /* Slight shift to the right on hover */
+}
+
+ul li span {
+    margin-left: 10px;
+}
+
+/* Input Styling */
+input[type="text"], select, input[type="password"] {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    border-color: #3498db; /* Blue border on focus */
+    outline: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .dashboard-container {
+        padding: 10px;
+    }
+
+    .login-page {
+        padding: 20px;
+    }
+
+    .login-box {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .dashboard-container h2 {
+        font-size: 20px;
+    }
+
+    .dashboard-section h4 {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    ul li {
+        font-size: 14px;
+    }
+}
